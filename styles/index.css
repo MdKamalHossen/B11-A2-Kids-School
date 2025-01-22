@@ -4,14 +4,16 @@
   padding: 0;
 }
 /* this is nav section  */
-.quicksand-name {
+body {
   font-family: "Quicksand", serif;
 }
 .nav-bar {
+  width: 1159px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
+  margin: 0 auto;
   padding: 2rem 0;
 }
 .nav-bar-logo {
@@ -74,3 +76,40 @@
   }
 }
 /* ended resonsive  */
+.banner {
+  width: 1159px;
+  height: 575px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 0 auto;  */
+}
+.banner-container .banner-title {
+  width: 70%;
+}
+.banner-title .banner-desc {
+  font-size: 20px;
+  opacity: 0.5;
+  line-height: 2rem;
+}
+.btn-enroll {
+  cursor: pointer;
+  width: 197px;
+  height: 50px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffff;
+  background-color: rgb(12, 11, 9);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.banner-container .banner-images {
+  width: 30%;
+}
