@@ -8,7 +8,7 @@ body {
   font-family: "Quicksand", serif;
 }
 .nav-bar {
-  width: 1159px;
+  width: 1158px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +40,7 @@ body {
   font-weight: 600;
 }
 .btn-nav {
+  cursor: pointer;
   width: 197px;
   height: 50px;
   border: none;
@@ -56,8 +57,11 @@ body {
 /* nav section ended  */
 @media screen and (max-width: 576px) {
   .nav-bar {
-    justify-content: flex-start;
-    padding-left: 2rem;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    border-bottom: 2px solid orange;
+    border-width: 100%;
   }
   .nav-bar .nav-bar-logo h3 {
     display: none;
@@ -77,7 +81,7 @@ body {
 }
 /* ended resonsive  */
 .banner {
-  width: 1159px;
+  width: 1158px;
   height: 575px;
   display: flex;
   align-items: center;
@@ -87,7 +91,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: 0 auto;  */
 }
 .banner-container .banner-title {
   width: 70%;
@@ -95,7 +98,8 @@ body {
 .banner-title .banner-desc {
   font-size: 20px;
   opacity: 0.5;
-  line-height: 2rem;
+  line-height: 1.5rem;
+  padding-top: 1.5rem;
 }
 .btn-enroll {
   cursor: pointer;
@@ -107,9 +111,32 @@ body {
   font-weight: 500;
   color: #ffff;
   background-color: rgb(12, 11, 9);
-  border-radius: 8px;
+  border-radius: 10px;
   margin-top: 10px;
 }
 .banner-container .banner-images {
-  width: 30%;
+  width: 40%;
+  margin-right: 0;
+  padding-left: 5rem;
 }
+/* responsive start banner  */
+@media screen and (max-width: 576px) {
+  .banner {
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+  .banner-title {
+    width: 100%;
+  }
+  .banner-container .banner-images {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding-left: 0rem;
+  }
+}
+/* ended responsive  */
