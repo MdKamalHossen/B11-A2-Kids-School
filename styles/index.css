@@ -140,3 +140,119 @@ body {
   }
 }
 /* ended responsive  */
+
+/* standard-section  */
+.standard {
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1158px;
+  height: 575px;
+  margin: 0 auto;
+}
+.card-container {
+  display: flex;
+  gap: 1rem;
+}
+.standard-container h1 {
+  font-size: 46px;
+  font-weight: bold;
+  text-align: center;
+  margin: 3rem;
+}
+.standard-container .standard-card {
+  width: 367.8px;
+  height: 476.78px;
+  background: linear-gradient(#cbecfa 10%, #ffffff 90%), no-repeat;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.standard-container .standard-card1 {
+  background: linear-gradient(#fff4dc 10%, #ffffff 90%), no-repeat;
+}
+.standard-container .standard-card2 {
+  background: linear-gradient(#ede2fc 10%, #ffffff 90%), no-repeat;
+}
+.standard-card h3 {
+  padding: 1rem 0;
+  font-size: 24px;
+  opacity: 0.7;
+}
+.standard-card p {
+  justify-content: center;
+  line-height: 25px;
+  opacity: 0.5;
+  padding-bottom: 2rem;
+}
+.standard-card a {
+  font-size: 15px;
+  font-weight: bold;
+  color: #64c8ff;
+  text-decoration: none;
+}
+.standard-card1 a {
+  color: #f0aa00;
+}
+.standard-card2 a {
+  color: #8700ff;
+}
+.erro {
+  text-align: center;
+}
+.erro .left {
+  border-radius: 100%;
+  padding: 10px;
+  width: 20%;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+  background-color: orange;
+}
+.erro .right {
+  border-radius: 100%;
+  padding: 10px;
+  width: 20%;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 0.5rem;
+  background-color: orange;
+}
+@media screen and (max-width: 576px) {
+  .standard {
+    width: 100%;
+  }
+  .standard-container,
+  .standard-card,
+  .card-container,
+  .card-container1,
+  .card-container2 {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .standard-card {
+    margin-bottom: 2rem;
+    padding-left: 0rem;
+  }
+  .standard-container h1 {
+    width: 80%;
+    text-align: center;
+    margin-top: 3rem;
+    opacity: 0.5;
+    font-size: 32px;
+  }
+  .erro {
+    display: none;
+  }
+  .erro .left {
+    display: none;
+  }
+  .erro .right {
+    display: none;
+  }
+}
