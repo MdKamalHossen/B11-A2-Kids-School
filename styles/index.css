@@ -1,4 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
+/* this is nav section  */
+.quicksand-name {
+  font-family: "Quicksand", serif;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 2rem 0;
+}
+.nav-bar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.nav-bar-logo h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.nav-link {
+  display: flex;
+  gap: 10px;
+}
+.nav-link li {
+  list-style: none;
+}
+.nav-link li a {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+.btn-nav {
+  width: 197px;
+  height: 50px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffff;
+  background-color: orange;
+  border-radius: 8px;
+}
+.nav-bar-icone {
+  display: none;
+}
+/* nav section ended  */
+@media screen and (max-width: 576px) {
+  .nav-bar {
+    justify-content: flex-start;
+    padding-left: 2rem;
+  }
+  .nav-bar .nav-bar-logo h3 {
+    display: none;
+  }
+  .nav-bar .nav-link li {
+    display: none;
+  }
+  .nav-bar-icone {
+    display: block;
+    margin-left: 22rem;
+    opacity: 0.7;
+  }
+  .btn-nav {
+    display: none;
+    color: red;
+  }
+}
+/* ended resonsive  */
