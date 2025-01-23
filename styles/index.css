@@ -425,20 +425,13 @@ body {
     width: auto;
     text-align: center;
   }
+  .right-image-container {
+    margin: 0;
+  }
+  .stories-container {
+    width: calc(532px * 5%);
+  }
 }
-/* .footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.part1 {
- 
-  justify-content: center;
-  align-items: center;
-}
-.part1 .logo-foot {
-  display: flex;
-} */
 
 .footer {
   background-color: #01acfd;
