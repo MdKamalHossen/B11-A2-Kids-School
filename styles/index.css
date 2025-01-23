@@ -491,3 +491,16 @@ body {
     height: auto;
   }
 }
+.main {
+  text-align: center;
+}
+
+.marq {
+  background-color: green;
+}
+
+.geek1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+}
