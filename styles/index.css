@@ -460,6 +460,10 @@ body {
 .footer-column {
   width: 33%;
 }
+.footer-desc {
+  padding-top: 1rem;
+  text-align: justify;
+}
 .second-header h2 {
   color: #ffffff;
   margin-bottom: 10px;
@@ -475,4 +479,15 @@ body {
 .nav-bar-footer li {
   margin-bottom: 1rem;
   justify-content: flex-start;
+}
+.third h2 {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 576px) {
+  .footer-container {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
 }
